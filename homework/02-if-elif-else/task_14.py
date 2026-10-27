@@ -60,3 +60,37 @@
 #     Ошибка ввода
 
 # Решение
+deadline = input()
+points = int(input())
+grade = 0
+
+if points < 0 or points > 10:
+    raise Warning("Ошибка ввода баллов!")
+
+if deadline not in ['да', 'нет']:
+    raise Warning("Ошибка ввода срока!")
+
+if deadline == "да":
+    if points >= 9:
+        grade = 5
+    elif points in [7, 8]:
+        grade = 4
+    elif points in [5, 6]:
+        grade = 3
+    else:
+        pass
+
+elif deadline == 'нет':
+    if points >= 5:
+        grade = 3
+    else:
+        pass
+
+print(f"Сдана в срок (да/нет): {deadline}")
+print(f"Баллы: {points}")
+
+if grade != 0:
+    print(f"Оценка: {grade}")
+
+else:
+    print("Работа не зачтена")
