@@ -28,3 +28,8 @@
 #     False
 
 # Решение
+count = int(input())
+
+send = (count % 6 == 0) and (count % 4 == 0)
+print(f"Количество бутылок: {count}")
+print(send)

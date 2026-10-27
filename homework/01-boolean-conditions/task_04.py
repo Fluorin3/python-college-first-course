@@ -44,3 +44,15 @@
 #     Позвонить покупателю: False
 
 # Решение
+
+is_paid = (input() == "")
+is_in = (input() == "")
+having_adress = (input() == "")
+
+send = is_paid & is_in & having_adress
+call = ((send is False) and (is_paid is True))
+print(f"Заказ оплачен (да/нет): {is_paid}")
+print(f"Товар есть (да/нет): {is_in}")
+print(f"Адрес указан (да/нет): {having_adress}")
+print(f"Можно отправлять: {send}")
+print(f"Позвонить покупателю: {call}")

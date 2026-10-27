@@ -30,3 +30,9 @@
 #     Полный билет: False
 
 # Решение
+
+age = int(input())
+free = ((age < 18) or (age >= 65))
+print(f"Возраст: {age}")
+print(f"Льготный билет: {free}")
+print(f"Полный билет: {free == False}")

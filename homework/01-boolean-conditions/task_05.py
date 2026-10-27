@@ -31,3 +31,16 @@
 #     Сессия закрыта: False
 
 # Решение
+first = int(input())
+second = int(input())
+third = int(input())
+
+pass1, pass2, pass3 = first >= 40, second >= 40, third >= 40
+is_passed = pass1 & pass2 & pass3
+
+print(f"Балл за первый экзамен: {first}")
+print(f"Балл за второй экзамен: {second}")
+print(f"Балл за третий экзамен: {third}")
+print(f"Сдано экзаменов: {int(pass1) + int(pass2) + int(pass3)}")
+print(f"Сессия закрыта: {is_passed}")
+

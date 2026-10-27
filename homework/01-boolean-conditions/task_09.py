@@ -41,3 +41,9 @@
 #     True
 
 # Решение
+first, second = int(input()), int(input())
+coupon = (first > 1000 and second < 1000) or (second > 1000 and first < 1000) 
+
+print(f"Цена первого товара, руб.: {first}")
+print(f"Цена второго товара, руб.: {second}")
+print(coupon)

@@ -50,3 +50,16 @@
 #     Можно на аттракцион: False
 
 # Решение
+
+height = int(input())
+age = int(input())
+adult = input()
+
+adult_near = (adult == "да")
+
+is_in = ((height >= 130) and ((age >= 10) or (adult_near is True)))
+
+print(f"Рост, см: {height}")
+print(f"Возраст: {age}")
+print(f"Со взрослым (да/нет): {adult_near}")
+print(f"Можно на аттракцион: {is_in}")
