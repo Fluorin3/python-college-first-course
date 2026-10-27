@@ -39,3 +39,13 @@
 #     False
 
 # Решение
+
+left = int(input())
+price_one = int(input())
+money = int(input())
+
+print(f"Остаток на складе, шт.: {left}")
+print(f"Цена товара, руб.: {price_one}")
+print(f"Деньги у покупателя, руб.: {money}")
+
+print(((left > 0) and (money >= price_one)))
