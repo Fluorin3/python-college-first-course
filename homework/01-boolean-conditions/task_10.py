@@ -49,3 +49,16 @@
 #     Допущен: False
 
 # Решение
+
+attendance = int(input("Посещаемость, %: "))
+labs = int(input("Сдано лабораторных: "))
+debt = int(input("Долг по оплате, руб.: "))
+
+att_ok = attendance >= 75
+labs_ok = labs >= 8
+no_debt = debt == 0
+
+print(f"Посещаемость: {att_ok}")
+print(f"Лабораторные: {labs_ok}")
+print(f"Нет долга: {no_debt}")
+print(f"Допущен: {att_ok and labs_ok and no_debt}")
